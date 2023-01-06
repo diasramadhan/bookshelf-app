@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Shelf | Dias Nur Ramadhan</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-hero">
+      <div class="content">
+        <h1>Book Shelf</h1>
+        <p>selamat datang di bookshelf app</p>
+        <p>kelola managemen buku anda di aplikasi ini. Coba sekarang !</p>
+      </div>
+      <video class="video-bg" src="assets/video/Book-bg.mp4" autoplay muted loop></video>
+    </div>
+  </header>
+
+  <main>
+    <div class="profile">
+      <img src="assets/img/me.png" alt="Dias Nur Ramadhan" />
+      <h2>Dias Nur Ramadhan | Pengembang Front-End Web dan React</h2>
+      <p>Mahasiswa</p>
+    </div>
+
+    <div class="d-flex">
+      <div class="col-1">
+        <div class="warp-above">
+          <h3>status</h3>
+
+          <div class="state">
+            <div class="undone">
+              <span>Belum Selesai</span>
+              <div class="value">0</div>
+            </div>
+            <div class="done">
+              <span>Selesai Dibaca</span>
+              <div class="value">0</div>
+            </div>
+          </div>
+        </div>
+
+        <section class="input_section">
+          <h2>Masukkan Buku Baru</h2>
+          <form id="inputBook">
+            <div class="input">
+              <label for="inputBookTitle">Judul</label>
+              <input id="inputBookTitle" type="text" required>
+            </div>
+            <div class="input">
+              <label for="inputBookAuthor">Penulis</label>
+              <input id="inputBookAuthor" type="text" required>
+            </div>
+            <div class="input">
+              <label for="inputBookYear">Tahun</label>
+              <input id="inputBookYear" type="number" required>
+            </div>
+            <div class="input_inline">
+              <label for="inputBookIsComplete">Selesai dibaca</label>
+              <input id="inputBookIsComplete" type="checkbox">
+            </div>
+            <button id="bookSubmit" type="submit">Masukkan Buku ke rak </button>
+          </form>
+        </section>
+      </div>
+
+      <div class="col-2">
+        <section class="search_section">
+          <h2>Cari Buku</h2>
+          <form id="searchBook">
+            <label for="searchBookTitle">Judul</label>
+            <input id="searchBookTitle" type="text">
+            <button id="searchSubmit" type="submit">Cari</button>
+          </form>
+        </section>
+
+        <section class="book_shelf">
+          <h2>Belum selesai dibaca</h2>
+
+          <div id="incompleteBookshelfList" class="book_list">
+            <!-- <article class="book_item">
+              <img src="assets/img/book-1.png" alt="book" height="130px">
+              <h3>Book Title</h3>
+              <p>Penulis: John Doe</p>
+              <p>Tahun: 2002</p>
+
+              <div class="action">
+                <button class="green">Selesai dibaca</button>
+                <button class="red">Hapus buku</button>
+              </div>
+            </article> -->
+          </div>
+        </section>
+
+        <section class="book_shelf">
+          <h2>Selesai dibaca</h2>
+
+          <div id="completeBookshelfList" class="book_list">
+            <!-- <article class="book_item">
+              <img src="assets/img/book-1.png" alt="book" height="130px">
+              <h3>Book Title</h3>
+              <p>Penulis: John Doe</p>
+              <p>Tahun: 2002</p>
+
+              <div class="action">
+                <button class="green">Belum selesai di Baca</button>
+                <button class="red">Hapus buku</button>
+              </div>
+            </article> -->
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== Start My Javascript ========== -->
+  <script src="js/script.js"></script>
+  <!-- ========== End My Javascript ========== -->
+</body>
+
+</html>
